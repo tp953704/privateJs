@@ -9,10 +9,11 @@
     <script>
         const a = {
             Private:{
-                age:18,
+                
                 cm:18.8
             },
             Public:{
+                age:18,
                 name:'Evan',
                 say:function(){
                     // console.log(this.age)
@@ -49,8 +50,8 @@
         }
 
         const privateBind = new Proxy(Person, privateHandler)
-        privateBind._age;
-        console.log(privateBind.say())
+        // privateBind._age;
+        // console.log(privateBind.say())
         function realPropKey(target,propKey){
     if(!Reflect.has(target, propKey)){
         console.log(propKey)
@@ -63,6 +64,55 @@
     }
     return propKey;
 }
+    
+    
+        // console.log(Person)
+
+
+        const a1 = {
+            Private:{
+                cm:9,
+                age:28,
+            },
+            Public:{
+                
+                name:'Evan!',
+                sayMan:function(){
+                    // console.log(this.age)
+                    return this.cm;
+                }
+            }
+        };
+        const IsHasPropKey =(Class,propKey)=>{
+            let privateProp = propKey;
+            let publicProp = propKey;
+            if(propKey.startsWith('_')){
+                // 砍掉第一個字
+                publicProp = propKey.substring(1,propKey.length)
+            }else{
+                privateProp = `_${propKey}`;
+            }
+            return Reflect.has(Class,publicProp) || Reflect.has(Class,privateProp);
+        }
+        // const aa ='123';
+        // console.log(aa.substring(1,aa.length))
+        function inherit(a1,Person){
+            const newClass = OOClass(a1);
+            for(let p in Person){
+               
+                if(!p.startsWith('_')){
+                
+                    if(!IsHasPropKey(newClass,p)){
+                        Reflect.set(newClass,p,Person[p])
+                    }
+                    
+                }
+            }
+            // new Proxy(newClass, privateHandler)
+            return new Proxy(newClass, privateHandler);
+        }
+        const PP = inherit(a1,privateBind);
+        console.log(PP)
     </script>
 </body>
 </html>

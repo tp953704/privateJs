@@ -1,5 +1,5 @@
 import {IParams} from "./help";
-
+import {privateBind} from "./private";
 
 export function OOClass(Params:IParams){
   const { Private,Public } = Params;
@@ -10,6 +10,6 @@ export function OOClass(Params:IParams){
   for(let key in Public){
       newObj[`${key}`]=Public[key];
   }
-  return newObj;
+  return privateBind(newObj);
 }
 

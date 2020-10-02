@@ -1,7 +1,7 @@
 import pkg from './package.json';
 const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
 import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
+
 
 const extensions = ['.ts'];
 
