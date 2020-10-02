@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = {
+            Private:{
+                age:18,
+                cm:18.8
+            },
+            Public:{
+                name:'Evan',
+                say:function(){
+                    // console.log(this.age)
+                    return this.age;
+                }
+            }
+        }
+        function OOClass(Params){
+            const { Private,Public } = Params;
+            const newObj = Object.create(null);
+            for(let key in Private){
+                newObj[`_${key}`]=Private[key];
+            }
+            for(let key in Public){
+                newObj[`${key}`]=Public[key];
+            }
+            return newObj;
+        }
+        const Person = OOClass(a)
+        const privateHandler = {
+            get:function (target, propKey, receiver) {
+                propKey = realPropKey(target,propKey);
+                if(!Reflect.has(target, 'isCallBySelf')){
+                    if(propKey.startsWith('_')){
+                        throw new TypeError("Cannot call a private element");
+                    }
+                    console.log(Reflect.has(target, 'isCallBySelf'))
+                    Reflect.set(target, 'isCallBySelf', true)
+                }else{
+                    Reflect.deleteProperty(target, 'isCallBySelf', true)
+                }
+                return Reflect.get(target, propKey, receiver);
+            },
+        }
+
+        const privateBind = new Proxy(Person, privateHandler)
+        privateBind._age;
+        console.log(privateBind.say())
+        function realPropKey(target,propKey){
+    if(!Reflect.has(target, propKey)){
+        console.log(propKey)
+        if(!Reflect.has(target, `_${propKey}`)){
+            throw new TypeError(`there is no ${propKey} element`);
+        }else{
+            console.log(Reflect.get(target, `_${propKey}`))
+            propKey = `_${propKey}`;
+        }
+    }
+    return propKey;
+}
+    </script>
+</body>
+</html>

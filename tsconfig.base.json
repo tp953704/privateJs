@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "@private-js/*": ["*/src/index"] //子包映射到对应目录
+    },
+    "target": "ES2019",  
+    "module": "ESNEXT",  
+    "declaration": true,
+    "sourceMap": true,
+    "strict": false,
+    "esModuleInterop": true
+  }
+}
