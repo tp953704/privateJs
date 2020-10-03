@@ -10,6 +10,9 @@ export function OOClass(Params:IParams){
   for(let key in Public){
       newObj[`${key}`]=Public[key];
   }
-  return privateBind(newObj);
+  return newObj;
 }
 
+export const OOPClass = (Params:IParams)=>{
+  return privateBind(OOClass(Params));
+}

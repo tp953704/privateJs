@@ -7,8 +7,7 @@ export const inherit = (childParams:IParams,Parent:any)=>{
     for(let sParentProto in Parent){
         if(!IsPrivate(sParentProto)){
             if(!IsHasPropKey(newClass,sParentProto)){
-                const value = Reflect.get(newClass,sParentProto);
-                Reflect.set(newClass,sParentProto,value)
+                Reflect.set(newClass,sParentProto,Parent[sParentProto])
             }
         }
     }

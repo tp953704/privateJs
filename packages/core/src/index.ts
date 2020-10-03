@@ -1,4 +1,6 @@
 
-import {OOClass} from "./instance/body";
+import {OOPClass} from "./instance/body";
 import {inherit} from "./inherit/index";
-export {OOClass,inherit};
+
+
+export {OOPClass,inherit};

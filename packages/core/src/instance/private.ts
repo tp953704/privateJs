@@ -2,11 +2,9 @@ import {IsPrivate} from "./help";
 
 function realPropKey(target:any,propKey:any):String{
     if(!Reflect.has(target, propKey)){
-        console.log(propKey)
         if(!Reflect.has(target, `_${propKey}`)){
             throw new TypeError(`there is no ${propKey} element`);
         }else{
-            console.log(Reflect.get(target, `_${propKey}`))
             propKey = `_${propKey}`;
         }
     }
