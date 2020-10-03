@@ -2,9 +2,9 @@
   "name": "@private-js/core",
   "version": "1.0.0",
   "description": "To achieve public,protect,private in javascript",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "license": "MIT",
-  "module": "dist/index.es.js",
+  "module": "dist/index.es.min.js",
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "watch": "rimraf dist/* && rollup -c -w",
