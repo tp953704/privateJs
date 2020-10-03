@@ -26,5 +26,10 @@ const Params = {
 }
 const Person = OOPClass(PersonParams);
 ```
+
+## package
+1. core (https://github.com/tp953704/privateJs/tree/master/packages/core)
+
+
 ## License
 MIT
