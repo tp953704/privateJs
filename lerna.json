@@ -7,15 +7,7 @@
   "version": "independent",
   "command": {
     "publish": {
-      "ignoreChanges": [
-        "*.md",
-        "*.txt",
-        "test/**",
-        "**/test/**",
-        "codemods/**",
-        "# We ignore every JSON file, except for native-modules, built-ins and plugins defined in babel-preset-env/data.",
-        "@(!(native-modules|built-ins|plugins|package)).json"
-      ]
+      "conventionalCommits": true
     }
   }
 }
