@@ -2,6 +2,20 @@
   "name": "private-js",
   "private": true,
   "license": "MIT",
+  "description": "To achieve public,private in javascript",
+  "author": "Evan Wang <tp953704@gmail.com>",
+  "homepage": "https://github.com/tp953704/privateJs/blob/master/README.md",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "keywords": [
+    "private-Js",
+    "PrivateJs",
+    "Class",
+    "private",
+    "OOP",
+    "Easy"
+  ],
   "workspaces": [
     "packages/*"
   ],

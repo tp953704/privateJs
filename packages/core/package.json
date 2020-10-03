@@ -1,6 +1,6 @@
 {
   "name": "@private-js/core",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "To achieve public,private in javascript",
   "main": "dist/index.min.js",
   "license": "MIT",
@@ -47,5 +47,5 @@
     "ts-jest": "^26.4.0",
     "typescript": "^4.0.3"
   },
-  "gitHead": "1bfc9c4bbba3b098c028f16c2bc01de1056da622"
+  "gitHead": "f525a090f35efc3092f984eebab8d9f6930d9c31"
 }
