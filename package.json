@@ -1,6 +1,5 @@
 {
   "name": "private-js",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
