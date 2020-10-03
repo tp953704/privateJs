@@ -9,3 +9,22 @@ Want to using Class with "protect public private" in Javascript? This is a Javas
 1. give up the prototype to reduce Unpredictable situation when we use inherit
 2. Proxy are heavily used in package
 
+## Intro
+privateJs is a javascript tool help you develop by OOP like Java and C#.
+
+```
+const Params = {
+    Private:{
+        age:18
+    },
+    Public:{
+        name:'EvanWang',
+        sayAge:function(){
+            return this.age;
+        }
+    }
+}
+const Person = OOPClass(PersonParams);
+```
+## License
+MIT
