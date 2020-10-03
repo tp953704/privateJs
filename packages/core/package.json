@@ -5,6 +5,21 @@
   "main": "dist/index.min.js",
   "license": "MIT",
   "module": "dist/index.es.min.js",
+  "author": "Evan Wang <tp953704@gmail.com>",
+  "homepage": "https://github.com/tp953704/privateJs/tree/master/packages/core#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tp953704/privateJs",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "private-Js",
+    "PrivateJs",
+    "Class",
+    "private",
+    "OOP",
+    "Easy"
+  ],
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "watch": "rimraf dist/* && rollup -c -w",
