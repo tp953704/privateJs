@@ -1,16 +1,22 @@
 {
   "name": "@private-js/core",
   "version": "1.0.0",
-  "description": "To achieve public,protect,private in javascript",
+  "description": "To achieve public,private in javascript",
   "main": "dist/index.min.js",
   "license": "MIT",
   "module": "dist/index.es.min.js",
   "author": "Evan Wang <tp953704@gmail.com>",
-  "homepage": "https://github.com/tp953704/privateJs/tree/master/packages/core#readme",
+  "homepage": "https://github.com/tp953704/privateJs/blob/master/packages/core/readme.md",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tp953704/privateJs",
     "directory": "packages/core"
+  },
+  "engines": {
+    "node": ">=8.9.0"
   },
   "keywords": [
     "private-Js",
