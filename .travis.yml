@@ -11,5 +11,5 @@ install:
   - lerna bootstrap
 
 script:
-  - lerna run test
-  - lerna run build
+  - npm run testAll
+  - npm run buildAll
