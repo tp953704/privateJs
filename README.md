@@ -17,6 +17,7 @@ Want to using Class with "protect public private" in Javascript? This is a Javas
 ## Feature
 1. give up the prototype to reduce Unpredictable situation when we use inherit
 2. Proxy are heavily used in package
+3. PrivateJs help you to deal with every behavior about 'private' & 'public'
 
 ## Intro
 privateJs is a javascript tool help you develop by OOP like Java and C#.
