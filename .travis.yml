@@ -8,7 +8,7 @@ cache:
 
 # S: Build Lifecycle
 install:
-  - lerna bootstrap
+  - npm run installAll
 
 script:
   - npm run testAll
