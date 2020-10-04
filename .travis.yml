@@ -8,8 +8,9 @@ cache:
 
 # S: Build Lifecycle
 install:
-  - npm run installAll
+  - yarn install
+  - yarn run installAll
 
 script:
-  - npm run testAll
-  - npm run buildAll
+  - yarn run testAll
+  - yarn run buildAll
