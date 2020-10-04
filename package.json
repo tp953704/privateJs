@@ -5,6 +5,10 @@
   "description": "To achieve public,private in javascript",
   "author": "Evan Wang <tp953704@gmail.com>",
   "homepage": "https://github.com/tp953704/privateJs/blob/master/README.md",
+  "scripts": {
+    "testAll": "lerna run test",
+    "buildAll":"lerna run build"
+  },
   "engines": {
     "node": ">=6.9.0"
   },
