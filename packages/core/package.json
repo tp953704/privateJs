@@ -1,6 +1,6 @@
 {
   "name": "@private-js/core",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "To achieve public,private in javascript",
   "main": "dist/index.min.js",
   "license": "MIT",
