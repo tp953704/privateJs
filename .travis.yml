@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 
 cache:
   yarn: true
@@ -10,8 +10,9 @@ cache:
 # S: Build Lifecycle
 install:
   - yarn install
-  - yarn run installAll
+  
 
 script:
+  - yarn run installAll
   - yarn run testAll
   - yarn run buildAll

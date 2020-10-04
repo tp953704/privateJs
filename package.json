@@ -10,9 +10,6 @@
     "buildAll":"lerna run build",
     "installAll": "lerna bootstrap"
   },
-  "engines": {
-    "node": ">=6.9.0"
-  },
   "keywords": [
     "private-Js",
     "PrivateJs",
