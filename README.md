@@ -35,6 +35,7 @@ const Params = {
     }
 }
 const Person = OOPClass(PersonParams);
+
 Person.age // error `Cannot call a private element`
 Person.sayAge() // 18
 Person.name //'EvanWang'
