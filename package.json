@@ -7,7 +7,8 @@
   "homepage": "https://github.com/tp953704/privateJs/blob/master/README.md",
   "scripts": {
     "testAll": "lerna run test",
-    "buildAll":"lerna run build"
+    "buildAll":"lerna run build",
+    "installAll": "lerna bootstrap"
   },
   "engines": {
     "node": ">=6.9.0"
