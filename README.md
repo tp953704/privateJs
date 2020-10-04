@@ -1,4 +1,12 @@
 # privateJs
+<p align="center">
+<img src="https://img.shields.io/npm/dy/@private-js/core" alt="private-js|download">  
+<img src="https://img.shields.io/github/size/tp953704/privateJs/packages/core/dist/index.es.min.js" alt="private-js|size">  
+<img src="https://img.shields.io/npm/l/@private-js/core" alt="private-js|MIT">  
+
+</p>
+
+
 Want to using Class with "protect public private" in Javascript? This is a Javascript library for develop who love program by OOP .
 
 ## who is suitable to use PrivateJs
