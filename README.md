@@ -40,7 +40,7 @@ Person.age // error `Cannot call a private element`
 Person.sayAge() // 18
 Person.name //'EvanWang'
 ```
-
+[See more ...](https://github.com/tp953704/privateJs/tree/master/packages/core)
 ## package
 1. [core](https://github.com/tp953704/privateJs/tree/master/packages/core)
 
