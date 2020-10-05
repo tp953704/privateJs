@@ -40,30 +40,39 @@
                     if(propKey.startsWith('_')){
                         throw new TypeError("Cannot call a private element");
                     }
-                    console.log(Reflect.has(target, 'isCallBySelf'))
+                    // console.log(Reflect.has(target, 'isCallBySelf'))
                     Reflect.set(target, 'isCallBySelf', true)
                 }else{
                     Reflect.deleteProperty(target, 'isCallBySelf', true)
                 }
                 return Reflect.get(target, propKey, receiver);
             },
+            set:function(target,propKey,value,receiver){
+                if(Reflect.has(target,propKey)){
+                    console.log([target,propKey])
+                    if(propKey.startsWith('_')){
+                        console.log(Reflect.has(target, 'isCallBySelf'))
+                    }
+                }
+                
+            }
         }
 
         const privateBind = new Proxy(Person, privateHandler)
         // privateBind._age;
         // console.log(privateBind.say())
         function realPropKey(target,propKey){
-    if(!Reflect.has(target, propKey)){
-        console.log(propKey)
-        if(!Reflect.has(target, `_${propKey}`)){
-            throw new TypeError(`there is no ${propKey} element`);
-        }else{
-            console.log(Reflect.get(target, `_${propKey}`))
-            propKey = `_${propKey}`;
+            if(!Reflect.has(target, propKey)){
+                console.log(propKey)
+                if(!Reflect.has(target, `_${propKey}`)){
+                    throw new TypeError(`there is no ${propKey} element`);
+                }else{
+                    console.log(Reflect.get(target, `_${propKey}`))
+                    propKey = `_${propKey}`;
+                }
+            }
+            return propKey;
         }
-    }
-    return propKey;
-}
     
     
         // console.log(Person)
@@ -80,6 +89,8 @@
                 sayMan:function(){
                     // console.log(this.age)
                     return this.cm;
+                },sayBB:function(){
+                    this.cm=12
                 }
             }
         };
@@ -99,7 +110,7 @@
         function inherit(a1,Person){
             const newClass = OOClass(a1);
             for(let p in Person){
-               
+               console.log(Person,p)
                 if(!p.startsWith('_')){
                 
                     if(!IsHasPropKey(newClass,p)){
@@ -112,7 +123,10 @@
             return new Proxy(newClass, privateHandler);
         }
         const PP = inherit(a1,privateBind);
-        console.log(PP.name)
+       
+        PP.sayBB()
+        console.log(PP)
+        
     </script>
 </body>
 </html>
