@@ -1,0 +1,41 @@
+{
+  "name": "@private-js/privatehandle",
+  "version": "1.0.3",
+  "description": "deal with all the private behavior with OOPClass",
+  "author": "Wang <tp953704@gmail.com>",
+  "homepage": "https://github.com/tp953704/privateJs/blob/master/README.md/tree/master/packages/privateHandle#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tp953704/privateJs",
+    "directory": "packages/privateHandle"
+  },
+  "scripts": {
+    "build": "rimraf dist/* && rollup -c",
+    "watch": "rimraf dist/* && rollup -c -w",
+    "test": "jest --coverage"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.7.2",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.0",
+    "rollup": "^2.26.4",
+    "rollup-plugin-terser": "^5.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/tp953704/privateJs/issues"
+  }
+}

@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: '',
+0 silly argv   globs: [ '@private/core' ],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: '@private/privatehandle'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath D:\作品\javascrpit庫\privateJs
+3 error Error: 404 Not Found - GET https://registry.npmjs.org/@private%2fprivatehandle - Not found
+3 error     at D:\作品\javascrpit庫\privateJs\node_modules\@evocateur\npm-registry-fetch\check-response.js:104:15
