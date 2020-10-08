@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for textCheck.ts</title>
+    <title>Code coverage report for instance/proxy.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> textCheck.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">instance</a> proxy.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/20</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">87.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/10</span>
+                <span class='fraction'>7/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/20</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -89,88 +89,91 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">26x</span>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const IsPrivateStart = (sPropKey: string) =&gt; {
-    return sPropKey.startsWith('_');
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {IsPrivate,realPropKey,IsHasPropKey} from "./help";
+&nbsp;
+&nbsp;
+// 處理private
+const privateHandler = {
+    get:function (target:any, propKey:string, receiver:any) {
+        // 是否命名要加 _
+        propKey = realPropKey(target,propKey);
+        // 是否自己函式回CALL
+        if(!IsHasPropKey(target, 'isCallBySelf')){
+            if(IsPrivate(target,propKey)){
+                throw new TypeError("Cannot call a private element");
+            }
+            Reflect.set(target, 'isCallBySelf', true)
+        }else{
+            Reflect.deleteProperty(target, 'isCallBySelf')
+        }
+        return Reflect.get(target, propKey, receiver);
+    },
+    set:function(target:any, propKey:string,value:any, receiver:any){
+        if(propKey === 'isCallBySelf'){
+            throw new TypeError("Cannot set a isCallBySelf element");
+        }
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(IsPrivate(target,propKey)){
+            throw new TypeError("Cannot set a private element");
+        }
+<span class="cstat-no" title="statement not covered" >        return true;</span>
+    }
 }
 &nbsp;
-export const IsHasPropKey =(propKeyAll:Set&lt;string&gt;,propKey:string)=&gt;{
-    let privateProp = propKey;
-    let publicProp = propKey;
-    if(IsPrivateStart(propKey)){
-        // 砍掉第一個字
-        publicProp = propKey.substring(1,propKey.length)
-    }else{
-        privateProp = `_${propKey}`;
-    }
-    return propKeyAll.has(publicProp) || propKeyAll.has(privateProp);
+export const privateBind =(OOClass:any)=&gt;{
+    return new Proxy(OOClass, privateHandler);
 }
-&nbsp;
-export const realPropKey = (propKeyAll:Set&lt;string&gt;,propKey:string):string =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if(!IsHasPropKey(propKeyAll,propKey)){
-<span class="cstat-no" title="statement not covered" >        throw new Error(`there is no element ${propKey}`)</span>
-    }
-    if(IsPrivateStart(propKey)){
-        return propKey.substring(1,propKey.length);
-    }
-    return `_${propKey}`;
-}
-&nbsp;
-export const IsPrivate = (propKeyAll:Set&lt;string&gt;,propKey:string):boolean =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if(!IsHasPropKey(propKeyAll,propKey)){
-<span class="cstat-no" title="statement not covered" >        throw new Error(`there is no element ${propKey}`)</span>
-    }
-    const realKey = realPropKey(propKeyAll,propKey);
-    return IsPrivateStart(realKey);
-}</pre></td></tr></table></pre>
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Oct 07 2020 21:31:59 GMT+0800 (GMT+08:00)
+                at Thu Oct 08 2020 22:43:46 GMT+0800 (GMT+08:00)
             </div>
         </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     

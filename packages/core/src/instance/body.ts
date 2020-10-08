@@ -1,5 +1,5 @@
 import {IParams} from "./help";
-import {privateBind} from "./private";
+import {privateBind} from "./proxy";
 
 export function OOClass(Params:IParams){
   const { Private,Public } = Params;
