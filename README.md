@@ -1,5 +1,5 @@
 # privateJs
-<p align="center">
+<p >
 <img src="https://img.shields.io/npm/dy/@private-js/core" alt="private-js|download">  
 <img src="https://img.shields.io/github/size/tp953704/privateJs/packages/core/dist/index.es.min.js" alt="private-js|size">  
 <img src="https://img.shields.io/npm/l/@private-js/core" alt="private-js|MIT">  
