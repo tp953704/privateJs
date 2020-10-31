@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1602168226512" clover="3.2.0">
-  <project timestamp="1602168226512" name="All files">
-    <metrics statements="62" coveredstatements="55" conditionals="27" coveredconditionals="18" methods="12" coveredmethods="10" elements="101" coveredelements="83" complexity="0" loc="62" ncloc="62" packages="2" files="4" classes="4"/>
+<coverage generated="1602169928537" clover="3.2.0">
+  <project timestamp="1602169928538" name="All files">
+    <metrics statements="61" coveredstatements="54" conditionals="27" coveredconditionals="18" methods="12" coveredmethods="10" elements="100" coveredelements="82" complexity="0" loc="61" ncloc="61" packages="2" files="4" classes="4"/>
     <package name="inherit">
-      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="D:\作品\javascrpit庫\privateJs\packages\core\src\inherit\index.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
       </file>
     </package>
     <package name="instance">
@@ -27,7 +26,7 @@
         <line num="5" count="5" type="stmt"/>
         <line num="6" count="5" type="stmt"/>
         <line num="7" count="5" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
         <line num="10" count="5" type="stmt"/>
         <line num="11" count="9" type="stmt"/>
         <line num="13" count="5" type="stmt"/>
@@ -44,42 +43,42 @@
         <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="20" count="0" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="25" count="10" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
-        <line num="31" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="30" count="11" type="stmt"/>
+        <line num="31" count="11" type="cond" truecount="1" falsecount="1"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
-        <line num="37" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="11" type="stmt"/>
+        <line num="37" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="39" count="2" type="stmt"/>
-        <line num="40" count="10" type="stmt"/>
-        <line num="41" count="10" type="stmt"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="41" count="11" type="stmt"/>
         <line num="44" count="2" type="stmt"/>
-        <line num="45" count="22" type="cond" truecount="2" falsecount="0"/>
-        <line num="46" count="12" type="stmt"/>
+        <line num="45" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="13" type="stmt"/>
         <line num="48" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
       </file>
       <file name="proxy.ts" path="D:\作品\javascrpit庫\privateJs\packages\core\src\instance\proxy.ts">
         <metrics statements="16" coveredstatements="15" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="8" count="12" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="32" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="20" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
       </file>
     </package>
   </project>
